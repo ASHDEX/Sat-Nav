@@ -1,0 +1,40 @@
+{
+  "version": 8,
+  "name": "{{STYLE_NAME}}",
+  "metadata": {
+    "generator": "Satnav MBTiles local server"
+  },
+  "sources": {
+    "offline-raster": {
+      "type": "raster",
+      "tiles": ["{{TILES_URL}}"],
+      "tileSize": {{TILE_SIZE}},
+      "scheme": "{{SCHEME}}",
+      "minzoom": {{MIN_ZOOM}},
+      "maxzoom": {{MAX_ZOOM}},
+      "bounds": {{BOUNDS}},
+      "attribution": "{{ATTRIBUTION}}",
+      "volatile": false
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "#eef3f7"
+      }
+    },
+    {
+      "id": "offline-raster-layer",
+      "type": "raster",
+      "source": "offline-raster",
+      "minzoom": {{MIN_ZOOM}},
+      "maxzoom": {{MAX_ZOOM}},
+      "paint": {
+        "raster-opacity": 1.0,
+        "raster-fade-duration": 0
+      }
+    }
+  ]
+}

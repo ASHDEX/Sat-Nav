@@ -1,0 +1,81 @@
+{
+  "version": 8,
+  "name": "{{STYLE_NAME}}",
+  "metadata": {
+    "mapbox:autocomposite": true,
+    "mapbox:type": "template"
+  },
+  "sources": {
+    "map": {
+      "type": "raster",
+      "tiles": ["{{DEM_TILES_URL}}"],
+      "tileSize": {{TILE_SIZE}},
+      "minzoom": {{MIN_ZOOM}},
+      "maxzoom": {{MAX_ZOOM}},
+      "scheme": "{{SCHEME}}",
+      "bounds": {{BOUNDS}}
+    },
+    "dem": {
+      "type": "raster-dem",
+      "tiles": ["{{DEM_TILES_URL}}"],
+      "tileSize": {{TILE_SIZE}},
+      "minzoom": {{MIN_ZOOM}},
+      "maxzoom": {{MAX_ZOOM}},
+      "scheme": "{{SCHEME}}",
+      "bounds": {{BOUNDS}},
+      "encoding": "terrarium"
+    },
+    "hillshade": {
+      "type": "raster",
+      "tiles": ["{{HILLSHADE_TILES_URL}}"],
+      "tileSize": {{TILE_SIZE}},
+      "minzoom": {{MIN_ZOOM}},
+      "maxzoom": {{MAX_ZOOM}},
+      "scheme": "{{SCHEME}}",
+      "bounds": {{BOUNDS}}
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "#f8f9fa"
+      }
+    },
+    {
+      "id": "hillshade-layer",
+      "type": "hillshade",
+      "source": "dem",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "hillshade-exaggeration": 0.5,
+        "hillshade-shadow-color": "#473B24",
+        "hillshade-highlight-color": "#FFFFFF",
+        "hillshade-accent-color": "#000000",
+        "hillshade-illumination-direction": 335,
+        "hillshade-illumination-anchor": "viewport"
+      }
+    },
+    {
+      "id": "hillshade-overlay",
+      "type": "raster",
+      "source": "hillshade",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 0.6,
+        "raster-brightness-min": 0.1,
+        "raster-brightness-max": 0.8,
+        "raster-contrast": 0.3
+      }
+    }
+  ],
+  "terrain": {
+    "source": "dem",
+    "exaggeration": 1.0
+  }
+}

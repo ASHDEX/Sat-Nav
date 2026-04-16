@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Satnav</string>
+    
+    <!-- Common strings -->
+    <string name="loading">Loading…</string>
+    <string name="loading_map">Loading map…</string>
+    <string name="error">Error</string>
+    <string name="error_occurred">An error occurred</string>
+    <string name="retry">Retry</string>
+    <string name="navigate_back">Navigate back</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="done">Done</string>
+    <string name="close">Close</string>
+    
+    <!-- Navigation -->
+    <string name="search_destination">Search destination</string>
+    <string name="where_to">Where to?</string>
+    <string name="recenter_map">Recenter map</string>
+    <string name="start_navigation">Start Navigation</string>
+    <string name="end_navigation">End Navigation</string>
+    <string name="eta">ETA</string>
+    <string name="distance">Distance</string>
+    <string name="via">via</string>
+    
+    <!-- Search screen -->
+    <string name="search">Search</string>
+    <string name="clear_search">Clear search</string>
+    <string name="recent_searches">Recent searches</string>
+    <string name="clear_all">Clear all</string>
+    <string name="no_results">No results found</string>
+    <string name="try_different_search">Try a different search</string>
+    
+    <!-- Home screen -->
+    <string name="recent_destinations">Recent destinations</string>
+    <string name="saved_places">Saved places</string>
+    <string name="view_all_saved_places">View all saved places</string>
+    
+    <!-- Route preview -->
+    <string name="route_options">Route options</string>
+    <string name="fastest_route">Fastest</string>
+    <string name="shortest_route">Shortest</string>
+    <string name="eco_route">Eco</string>
+    <string name="recommended">Recommended</string>
+    
+    <!-- Navigation screen -->
+    <string name="maneuver">Maneuver</string>
+    <string name="next_turn">Next turn</string>
+    <string name="arrival_time">Arrival</string>
+    <string name="remaining_time">Remaining</string>
+    <string name="remaining_distance">Remaining distance</string>
+    
+    <!-- Saved places -->
+    <string name="no_saved_places">No saved places</string>
+    <string name="no_saved_places_message">Save your favorite places for quick navigation</string>
+    <string name="add_first_place">Add your first place</string>
+    <string name="add_place">Add place</string>
+    <string name="edit_place">Edit place</string>
+    
+    <!-- Offline maps -->
+    <string name="no_offline_maps">No offline maps</string>
+    <string name="no_offline_maps_message">Download maps for offline navigation</string>
+    <string name="download_first_map">Download your first map</string>
+    <string name="download_map">Download map</string>
+    <string name="storage_used">Storage used</string>
+    <string name="delete_map">Delete map</string>
+    <string name="map_size">Map size</string>
+    
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="units">Units</string>
+    <string name="voice_guidance">Voice guidance</string>
+    <string name="theme">Theme</string>
+    <string name="map_style">Map style</string>
+    <string name="about">About</string>
+    <string name="kilometers">Kilometers</string>
+    <string name="miles">Miles</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="system_default">System default</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+    <string name="vector_map">Vector map</string>
+    <string name="raster_map">Raster map</string>
+    <string name="terrain_map">Terrain map</string>
+    
+    <!-- Screen titles -->
+    <string name="home_screen_title">Map</string>
+    <string name="search_screen_title">Search</string>
+    <string name="route_preview_screen_title">Route Preview</string>
+    <string name="navigation_screen_title">Navigation</string>
+    <string name="saved_places_screen_title">Saved Places</string>
+    <string name="offline_maps_screen_title">Offline Maps</string>
+    <string name="settings_screen_title">Settings</string>
+    
+    <!-- Accessibility -->
+    <string name="accessibility_search_button">Search</string>
+    <string name="accessibility_back_button">Back</string>
+    <string name="accessibility_close_button">Close</string>
+    <string name="accessibility_menu_button">Menu</string>
+    <string name="accessibility_recenter_map_button">Recenter map</string>
+    <string name="accessibility_toggle_camera_mode_button">Toggle camera mode</string>
+    <string name="accessibility_route_option">Route option, %1$s, %2$s, %3$s</string>
+    <string name="accessibility_start_navigation_button">Start navigation</string>
+    <string name="accessibility_end_navigation_button">End navigation</string>
+    <string name="accessibility_maneuver_banner">Next maneuver: %1$s in %2$s</string>
+    
+    <!-- Trip planning -->
+    <string name="trip_creator_title">Plan Trip</string>
+    <string name="trip_creator_saved_trips">Saved Trips</string>
+    <string name="trip_creator_clear">Clear</string>
+    <string name="trip_creator_compute">Compute Trip</string>
+    <string name="trip_creator_error_title">Trip Error</string>
+    <string name="trip_creator_retry">Retry</string>
+    <string name="trip_creator_add_stop">Add Stop</string>
+    <string name="trip_creator_select_place">Select place…</string>
+    <string name="trip_creator_move_up">Move up</string>
+    <string name="trip_creator_move_down">Move down</string>
+    <string name="trip_creator_remove_stop">Remove stop</string>
+    <string name="trip_creator_trip_computed">Trip Computed</string>
+    <string name="trip_creator_total_distance">Total distance</string>
+    <string name="trip_creator_total_duration">Total duration</string>
+    <string name="trip_creator_stops">Stops</string>
+    <string name="trip_creator_save">Save</string>
+    <string name="trip_creator_navigate">Navigate</string>
+    <string name="trip_creator_no_saved_trips">No saved trips</string>
+    <string name="trip_creator_save_trips_to_see_here">Save trips to see them here</string>
+    <string name="trip_creator_load_trip">Load trip</string>
+    <string name="trip_creator_save_trip">Save Trip</string>
+    <string name="trip_creator_trip_name">Trip name</string>
+    <string name="trip_creator_start_navigation">Start Navigation</string>
+    <string name="trip_creator_navigation_confirmation">Navigate "%1$s"?</string>
+    <string name="trip_creator_start">Start</string>
+    
+    <!-- Multi-leg navigation -->
+    <string name="arrived_at_waypoint">Arrived at waypoint</string>
+    <string name="waypoint_countdown">Continuing in %1$d seconds…</string>
+    <string name="skip_to_next_leg">Skip to next leg</string>
+    <string name="leg_progress">Leg %1$d of %2$d</string>
+    
+    <!-- Trip creator new strings -->
+    <string name="trip_creator_plan_trip">Plan a trip</string>
+    <string name="trip_creator_search_or_type_place">Search or type a place…</string>
+    <string name="trip_creator_your_location">Your location</string>
+    <string name="trip_creator_location_unavailable">Location unavailable — type a starting point</string>
+    <string name="trip_creator_no_results_found">No places found</string>
+    <string name="trip_creator_save_trip_dialog_title">Save trip</string>
+    <string name="trip_creator_continue_now">Continue Now</string>
+    <string name="trip_creator_next">Next</string>
+    <string name="trip_creator_arrived_at">Arrived at %1$s</string>
+    <string name="trip_creator_route_unavailable">Route unavailable</string>
+    <string name="trip_creator_stop">Stop</string>
+    <string name="trip_creator_of">of</string>
+    <string name="trip_creator_transport_car">Car</string>
+    <string name="trip_creator_transport_bike">Bicycle</string>
+    <string name="trip_creator_transport_walk">Walking</string>
+    <string name="trip_creator_trip_saved">Trip saved</string>
+</resources>

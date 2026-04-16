@@ -1,0 +1,27 @@
+*.iml
+.gradle/
+/local.properties
+/.idea/
+/build/
+**/build/
+captures/
+.DS_Store
+
+# Release signing files
+keystore.properties
+*.jks
+*.keystore
+release.keystore
+
+# Large files and graph data
+*.osm
+*.osm.pbf
+*.mbtiles
+*.geojson
+*.jar
+graph-cache*/
+logs/
+tilemaker/
+.gradle-local/
+corretto17.pkg
+

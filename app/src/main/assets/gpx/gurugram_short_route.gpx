@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="SatNav Debug Tool" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <name>Gurugram Short Route</name>
+    <desc>A short test route in Gurugram from Cyber Hub to MG Road</desc>
+    <time>2024-04-11T06:00:00Z</time>
+  </metadata>
+  <trk>
+    <name>Gurugram Test Route</name>
+    <trkseg>
+      <trkpt lat="28.4967" lon="77.0889">
+        <ele>220</ele>
+        <time>2024-04-11T06:00:00Z</time>
+      </trkpt>
+      <trkpt lat="28.4970" lon="77.0895">
+        <ele>221</ele>
+        <time>2024-04-11T06:00:30Z</time>
+      </trkpt>
+      <trkpt lat="28.4975" lon="77.0902">
+        <ele>222</ele>
+        <time>2024-04-11T06:01:00Z</time>
+      </trkpt>
+      <trkpt lat="28.4980" lon="77.0910">
+        <ele>223</ele>
+        <time>2024-04-11T06:01:30Z</time>
+      </trkpt>
+      <trkpt lat="28.4985" lon="77.0918">
+        <ele>224</ele>
+        <time>2024-04-11T06:02:00Z</time>
+      </trkpt>
+      <trkpt lat="28.4990" lon="77.0925">
+        <ele>225</ele>
+        <time>2024-04-11T06:02:30Z</time>
+      </trkpt>
+      <trkpt lat="28.4995" lon="77.0932">
+        <ele>226</ele>
+        <time>2024-04-11T06:03:00Z</time>
+      </trkpt>
+      <trkpt lat="28.5000" lon="77.0940">
+        <ele>227</ele>
+        <time>2024-04-11T06:03:30Z</time>
+      </trkpt>
+      <trkpt lat="28.5005" lon="77.0948">
+        <ele>228</ele>
+        <time>2024-04-11T06:04:00Z</time>
+      </trkpt>
+      <trkpt lat="28.5010" lon="77.0955">
+        <ele>229</ele>
+        <time>2024-04-11T06:04:30Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

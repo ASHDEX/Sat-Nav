@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk -F/ '{print $NF}')",
+      "Bash(awk -F':' '{print $1}')",
+      "Bash(timeout 120 ./gradlew assembleDebug --continue)",
+      "Bash(unset JAVA_HOME)",
+      "Bash(grep -r \"import.*\\\\$\\\\{\" /Users/jayesh/Public/Satnav/app/src/main/java/com/jayesh/satnav --include=\"*.kt\" ! -path \"*/tripcreator.disabled/*\")",
+      "Bash(grep -r \"TODO\\\\|FIXME\\\\|HACK\" /Users/jayesh/Public/Satnav/app/src/main/java/com/jayesh/satnav --include=\"*.kt\" ! -path \"*/tripcreator.disabled/*\")",
+      "Bash(find /Users/jayesh/Public/Satnav/app/src/main/java/com/jayesh/satnav -name \"*.kt\" ! -path \"*/tripcreator.disabled/*\" -exec grep -l \"is not defined\\\\|Unresolved reference\" {} \\\\;)",
+      "Bash(brew --cellar openjdk@17)"
+    ]
+  }
+}

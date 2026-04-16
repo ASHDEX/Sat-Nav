@@ -1,0 +1,172 @@
+{
+  "version": 8,
+  "name": "{{STYLE_NAME}}",
+  "metadata": {
+    "generator": "Satnav Cockpit Light - Daytime Driving"
+  },
+  "sources": {
+    "offline-vector": {
+      "type": "vector",
+      "tiles": ["{{TILES_URL}}"],
+      "scheme": "{{SCHEME}}",
+      "minzoom": {{MIN_ZOOM}},
+      "maxzoom": {{MAX_ZOOM}},
+      "bounds": {{BOUNDS}},
+      "attribution": "{{ATTRIBUTION}}"
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "#F5F7FA"
+      }
+    },
+    {
+      "id": "landcover",
+      "type": "fill",
+      "source": "offline-vector",
+      "source-layer": "landcover",
+      "filter": ["==", "$type", "Polygon"],
+      "paint": {
+        "fill-color": "#E8F5E9",
+        "fill-opacity": 0.75
+      }
+    },
+    {
+      "id": "landuse",
+      "type": "fill",
+      "source": "offline-vector",
+      "source-layer": "landuse",
+      "filter": ["==", "$type", "Polygon"],
+      "paint": {
+        "fill-color": "#F1F8E9",
+        "fill-opacity": 0.65
+      }
+    },
+    {
+      "id": "water",
+      "type": "fill",
+      "source": "offline-vector",
+      "source-layer": "water",
+      "filter": ["==", "$type", "Polygon"],
+      "paint": {
+        "fill-color": "#B3E5FC"
+      }
+    },
+    {
+      "id": "waterway",
+      "type": "line",
+      "source": "offline-vector",
+      "source-layer": "waterway",
+      "filter": ["==", "$type", "LineString"],
+      "paint": {
+        "line-color": "#81D4FA",
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          5, 0.4,
+          10, 1.2,
+          14, 2.5
+        ]
+      }
+    },
+    {
+      "id": "roads-casing",
+      "type": "line",
+      "source": "offline-vector",
+      "source-layer": "transportation",
+      "filter": ["==", "$type", "LineString"],
+      "paint": {
+        "line-color": [
+          "match",
+          ["get", "class"],
+          "motorway", "#F57C00",
+          "trunk", "#FF9800",
+          "primary", "#FFB74D",
+          "secondary", "#78909C",
+          "tertiary": "#90A4AE",
+          "residential": "#B0BEC5",
+          "service": "#CFD8DC",
+          "#ECEFF1"
+        ],
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          5, 1.0,
+          10, 3.2,
+          14, 8.0
+        ],
+        "line-opacity": 0.9
+      }
+    },
+    {
+      "id": "roads",
+      "type": "line",
+      "source": "offline-vector",
+      "source-layer": "transportation",
+      "filter": ["==", "$type", "LineString"],
+      "paint": {
+        "line-color": [
+          "match",
+          ["get", "class"],
+          "motorway", "#FF6D00",
+          "trunk": "#FF9800",
+          "primary": "#FFB74D",
+          "secondary": "#546E7A",
+          "tertiary": "#78909C",
+          "residential": "#90A4AE",
+          "service": "#B0BEC5",
+          "#CFD8DC"
+        ],
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          5, 0.5,
+          10, 1.6,
+          14, 4.0
+        ],
+        "line-opacity": 0.8
+      }
+    },
+    {
+      "id": "buildings",
+      "type": "fill",
+      "source": "offline-vector",
+      "source-layer": "building",
+      "filter": ["==", "$type", "Polygon"],
+      "paint": {
+        "fill-color": "#CFD8DC",
+        "fill-opacity": 0.7
+      }
+    },
+    {
+      "id": "labels",
+      "type": "symbol",
+      "source": "offline-vector",
+      "source-layer": "place",
+      "filter": ["==", "$type", "Point"],
+      "layout": {
+        "text-field": ["get", "name"],
+        "text-size": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          5, 10,
+          10, 12,
+          14, 14
+        ],
+        "text-font": ["Noto Sans Regular"]
+      },
+      "paint": {
+        "text-color": "#212121",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1.5
+      }
+    }
+  ]
+}
