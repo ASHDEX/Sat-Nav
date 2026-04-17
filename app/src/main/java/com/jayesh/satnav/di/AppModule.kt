@@ -6,10 +6,12 @@ import com.jayesh.satnav.core.utils.DefaultAppDispatchers
 import com.jayesh.satnav.data.repository.OfflineMapRepositoryImpl
 import com.jayesh.satnav.data.repository.OfflineAssetsRepositoryImpl
 import com.jayesh.satnav.data.repository.RoutingRepositoryImpl
+import com.jayesh.satnav.data.repository.SavedPlacesRepositoryImpl
 import com.jayesh.satnav.data.repository.TrafficPatternRepositoryImpl
 import com.jayesh.satnav.domain.repository.OfflineMapRepository
 import com.jayesh.satnav.domain.repository.OfflineAssetsRepository
 import com.jayesh.satnav.domain.repository.RoutingRepository
+import com.jayesh.satnav.domain.repository.SavedPlacesRepository
 import com.jayesh.satnav.domain.repository.TrafficPatternRepository
 import dagger.Binds
 import dagger.Module
@@ -54,4 +56,10 @@ abstract class AppBindingModule {
     abstract fun bindTrafficPatternRepository(
         impl: TrafficPatternRepositoryImpl,
     ): TrafficPatternRepository
+
+    @Binds
+    @Singleton
+    abstract fun bindSavedPlacesRepository(
+        impl: SavedPlacesRepositoryImpl,
+    ): SavedPlacesRepository
 }
